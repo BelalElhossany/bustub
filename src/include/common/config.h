@@ -43,4 +43,9 @@ using lsn_t = int32_t;         // log sequence number type
 using slot_offset_t = size_t;  // slot offset type
 using oid_t = uint16_t;
 
+Struct ReplacerPagePlaceHolder {
+bool exist;
+bool reference_bit;
+}
+
 }  // namespace bustub

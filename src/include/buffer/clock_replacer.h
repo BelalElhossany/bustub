@@ -24,6 +24,9 @@ namespace bustub {
 /**
  * ClockReplacer implements the clock replacement policy, which approximates the Least Recently Used policy.
  */
+
+
+
 class ClockReplacer : public Replacer {
  public:
   /**
@@ -47,6 +50,9 @@ class ClockReplacer : public Replacer {
 
  private:
   // TODO(student): implement me!
+  ReplacerPagePlaceHolder* replacer_place_holder;
+  int clock_hand;
+  size_t size_of_replacer_place_holders;
 };
 
 }  // namespace bustub
