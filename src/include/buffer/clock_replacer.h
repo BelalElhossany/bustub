@@ -49,7 +49,7 @@ class ClockReplacer : public Replacer {
  private:
   // TODO(student): implement me!
   ReplacerPagePlaceHolder *replacer_place_holder;
-  frame_id_t clock_hand;
+  int clock_hand;
   size_t size_of_replacer_place_holders;
   size_t num_pages_;
 };

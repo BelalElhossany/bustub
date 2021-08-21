@@ -44,8 +44,8 @@ using slot_offset_t = size_t;  // slot offset type
 using oid_t = uint16_t;
 
 struct ReplacerPagePlaceHolder {
-  bool exist;
-  bool reference_bit;
+  bool pinned=true;
+  bool reference_bit=false;
 };
 
 }  // namespace bustub
